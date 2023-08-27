@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button class="search-btn">Search</button>
+        </div>
+        <h1>Chat Groups</h1>
+        <ul>
+        <li><a href="#">Chutiyapa</a></li>
+        <li><a href="#">B.Tech IT</a></li>
+        <li><a href="#">Coding Group</a></li>
+        </ul>
+        <h1>Direct Messages</h1>
+        <ul>
+        <li><a href="direct.html">Om</a></li>
+        <li><a href="direct.html">Dipak</a></li>
+        <li><a href="direct.html">Atul</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="notifications">
+            <p id="notification-msg">You have 3 new messages.</p>
+            <button class="mark-all-read-btn" id="mark-all-read-btn-id" onclick="myFunction()">Mark All as Read</button>
+        </div>
+
+        <div class="chat-header">
+        <h2>Chutiyapa</h2>
+        <button class="leave-group-btn">Leave Group</button>
+        <div class="user-profile">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <p class="username">Deepak</p>
+        </div>
+        </div>
+        <div class="chat-messages">
+        <div class="message">
+            <div class="user-profile">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <p class="username">Om:</p>
+            </div>
+            <p class="text">Class start hogaya ajao jaldi</p>
+            <p class="timestamp">10:05 AM</p>
+        </div>
+        <div class="message">
+            <div class="user-profile">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <p class="username">Atul:</p>
+            </div>
+            <p class="text">5 min aya canteen pe hun</p>
+            <p class="timestamp">10:07 AM</p>
+        </div>
+        <div class="message">
+            <div class="user-profile">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <p class="username">Dipak:</p>
+            </div>
+            <p class="text">5 min bhi nahi rukenge</p>
+            <p class="timestamp">10:09 AM</p>
+        </div>
+        <div class="message">
+            <div class="user-profile">
+            <!-- <img src="user-avatar.jpg" alt="User Avatar"> -->
+            <p class="username">Me:</p>
+            </div>
+            <p class="text">Aisa kyu</p>
+            <p class="timestamp">10:11 AM</p>
+        </div>
+        </div>
+        <form class="chat-form">
+        <input type="text" class="message-input" placeholder="Type your message...">
+        <button type="submit" class="send-btn">Send</button>
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

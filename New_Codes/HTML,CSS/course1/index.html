@@ -1,0 +1,290 @@
+<!-- -----------------------------------------First (Buttons,Hover,Boxmodel)-------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .sub{
+            background-color:rgb(200,0,0);
+            color: white;
+            padding: 2px;
+            border:none;
+            border-radius: 2px;
+            cursor: pointer;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 16px;
+            padding-right: 16px;
+            transition: opacity 0.15s;
+        }
+        #link{
+            color: rgb(0, 113, 133);
+        }
+        #price{
+            color: rgb(0,136,0);
+            font-weight: bold;
+        }
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .join,.tweet{
+            background-color: white;
+            border-color: rgb(41,118,211);
+            border-style:solid;
+            border-width:1px;
+            border-radius: 2px;
+            cursor:pointer;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 16px;
+            padding-right: 16px;
+            transition:background-color 0.15s,color 0.15s,box-shadow 0.15s;
+        }
+        .tweet{
+            background-color:rgb(2,137,255);
+            color:white;
+            border:none;
+            height:36px;
+            width:74px;
+            border-radius:18px;
+            font-weight: bold;
+            font-size:15px;
+            cursor:pointer;
+        }
+        .amazon,.amazon1{
+            background-color: rgb(249,217,76);
+            width:110px;
+            height: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            border: none;
+        }
+        .amazon{
+            margin-right:8px;
+        }
+        .amazon1{
+            background-color: rgb(255,164,28);
+        }
+        .uber{
+            background-color: black;
+            color: white;
+            height: 40px;
+            width:110px;
+            cursor: pointer;
+            border:none;
+            transition: opacity 0.15s;
+        }
+        .github{
+            background-color: rgb(46, 164, 79);
+            width:90px;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding-bottom: 5px;
+            font-weight: 900;
+            font-size: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.15s;
+        }
+        .bootstrapb1{
+            width: 110px;
+            height: 40px;
+            background-color: rgb(121, 82, 179);
+            border-radius: 3px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        .bootstrapb2{
+            margin-left: 6px;
+            width: 100px;
+            height: 40px;
+            background-color: white;
+            color: rgb(108, 117, 125);
+            border-color: rgb(108, 117, 125);
+            border-radius: 4px;
+            border-width: 1px;
+            border-style: solid;
+            font-weight:bold;
+            cursor:pointer;
+            transition:background-color 0.15s,color 0.15s;
+        }
+        .linkdin1,.linkdin2{
+            border-radius: 20px;
+            height: 40px;
+            font-weight: bold;
+            padding-bottom: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .linkdin1{
+            background-color: rgb(10,102,194);
+            color: white;
+            width: 240px;
+            border: none;
+            transition:background-color 0.15s;
+        }
+        .linkdin2{
+            width: 80px;
+            background-color: white;
+            border-color: rgb(10,102,194);
+            border-width: 1px;
+            color: rgb(10,102,194);
+            transition:background-color 0.15s,border-width 0.15s;
+        }
+        .sub:hover{
+            opacity:0.7;
+        }
+        .sub:active{
+            opacity: 0.5;
+        }
+        .join:hover{
+            background-color: rgb(41,118,211);
+            color:white;
+        }
+        .join:active{
+            opacity:0.7;
+        }
+        .tweet:hover{
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+        }
+        .uber:hover{
+            opacity: 0.8;
+        }
+        .amazon:hover{
+            background-color: rgb(247,202,0);
+        }
+        .amazon:active{
+            opacity: 0.5;
+        }
+        .amazon1:hover{
+            background-color: rgb(250,137,0);
+        }
+        .amazon1:active{
+            opacity: 0.5;
+        }
+        .github:hover{
+            box-shadow: 0px 5px 8px rgba(0,0,0,0.15);
+        }
+        .bootstrapb1:hover{
+            background-color: rgb(99, 60, 156);
+        }
+        .bootstrapb2:hover{
+            background-color: rgb(108, 117, 125);
+            color: white;
+        }
+        .linkdin1:hover{
+            background-color: rgb(2, 70, 138);
+        }
+        .linkdin2:hover{
+            background-color: rgb(226, 240, 254);
+            border-width: 2px;
+        }
+        #link:hover{
+            color: red;
+        }
+        #pagination{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            transition: height 0.3s,width 0.1s;
+        }
+        #pagilink{
+            margin: 4px;    
+        }
+        #pagination:hover{
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.amazon.com" target="_blank" id="link">Back to Amazon</a>
+    <p class="title">Nike Black Running Shoes</p>
+    <p id="price">$39 - in stock.</p>
+    <p>Free delivery tomorrow</p>
+    <p></p>
+    <button class="amazon">Add to cart</button>
+    <button class="amazon1">Buy now</button>
+    <p></p>
+    <button class="sub">SUBSCRIBE</button>
+    <button class="join">JOIN</button>
+    <button class="tweet">Tweet</button>
+    <p></p>
+    <button class="uber">Request now</button>
+    <p></p>
+    <button class="github">Sign up</button>
+    <p></p>
+    <button class="bootstrapb1">Get started</button>
+    <button class="bootstrapb2">Download</button>
+    <p></p>
+    <button class="linkdin1">Apply on company website</button>
+    <button class="linkdin2">Save</button>
+    <p></p>
+    <button id="pagination">Back</button>
+    <a id="pagilink" href="#">1</a>
+    <a id="pagilink" href="#">2</a>
+    <a id="pagilink" href="#">3</a>
+    <a id="pagilink" href="#">4</a>
+    <a id="pagilink" href="#">5</a>
+    <button id="pagination">Next</button>
+</body>
+</html>
+
+<!-- -----------------------------------------First End-------------------------------------------------------- -->
+
+
+<!-- -----------------------------------------Second ())-------------------------------------------------------- -->
+
+<style>
+    p{
+        font-family: arial;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .video-title{
+        font-size:18px;
+        font-weight:bold;
+        width:300px;
+        line-height:24px;
+        margin-bottom: 5px;
+    }
+    .video-stats{
+        font-size:14px;
+        color:rgb(96,96,96);
+    }
+    .video-author{
+        font-size:14px;
+        color:rgb(96,96,96);
+    }
+    .video-description{
+        font-size:14px;
+        color:rgb(96,96,96);
+        width:280px;
+        line-height: 22px;
+    }
+</style>
+
+<p class="video-title">
+    Talking Tech and AU with Google CEO Sundar Pichai
+</p>
+
+<p class="video-stats">
+    3.4M views &#183; 6 months ago
+</p>
+
+<p class="video-author">
+    Marques Brownlee &#10003;
+</p>
+
+<p class="video-description">
+    Talking tech and AI on the heels of Googlr I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>

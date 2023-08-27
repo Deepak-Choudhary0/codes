@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+    <div id="user-profile">
+        <img src="profile-picture.png">
+        <h2>John Doe</h2>
+        <p>Online</p>
+    </div>
+    <div id="group-list">
+        <h3>Groups</h3>
+        <ul>
+        <li><a href="#">Group 1</a></li>
+        <li><a href="#">Group 2</a></li>
+        <li><a href="#">Group 3</a></li>
+        </ul>
+    </div>
+    <div id="file-list">
+        <h3>Shared Files</h3>
+        <ul>
+        <li><a href="#">File 1</a></li>
+        <li><a href="#">File 2</a></li>
+        <li><a href="#">File 3</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div id="chat-window">
+    <div id="chat-header">
+        <h2>Group 1</h2>
+        <button id="add-member-button">Add Member</button>
+    </div>
+    <ul id="chat-messages">
+        <!-- messages will be added here dynamically -->
+    </ul>
+    <div id="message-input-container">
+        <input type="text" id="message-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+        <input type="file" id="file-input">
+        <button id="send-file-button">Send File</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

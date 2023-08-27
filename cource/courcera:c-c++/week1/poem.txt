@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(void)
+{   
+    printf("A Poem\nIn twilight's embrace, whispers unfold,\nA symphony of stars, a tale untold.\nSilent melodies dance on moonlit streams,\nWhere dreams take flight, woven in gleams.\nEthereal whispers on zephyrs sway,\nPainting hues of love in the Milky Way.\nWhere petals weep in morning's dew,\nHope blossoms anew, embracing the view.\n");
+    return 0;
+}

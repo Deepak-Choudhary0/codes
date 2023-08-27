@@ -1,0 +1,20 @@
+s="12:59:59PM"
+if((s.find("PM"))!=-1):
+    output=s.replace("PM","")
+    while(True):
+        string=output[0:2]
+        if(int(string)!=12):
+        	string1=str(int(string)+12)
+            output=output.replace(string,string1)
+        else:
+        output=output.replace(string,'00')
+        break
+    output=output.replace(string,string1)
+else:
+    output=s.replace("AM","")
+    while(True):
+        string=output[0:2]
+        print(string)
+        if(int(string)==12):
+            output=output.replace(string,"00")
+        break
